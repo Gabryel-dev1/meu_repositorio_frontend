@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(97, 19, 19);
+    padding-top: 130px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 550px;
+    width: 100%;
+}
