@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarefas</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="container">
-    <header>
-        <h1>Lista de tarefas a fazer</h1>
-    </header>
-    <form>
-        <input type="text" required placeholder="Tarefa">
-        <button>Cadastrar</button>
-    </form>
+        <header>
+            <h1>Lista de tarefas</h1>
+        </header>
+        <form id="formtarefa">
+            <input type="text" id="tarefa" required placeholder="Qual tarefa deseja anotar?">
+            <button type="submit">Anotar</button>
+        </form>
+    <table id="tabela">
+        <tbody>
+        </tbody>
+    </table>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
