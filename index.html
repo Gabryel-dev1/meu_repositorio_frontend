@@ -12,10 +12,10 @@
             <h1>Formulario de cadastro</h1>
             <input type="text" required id="Nome" placeholder="Nome completo">
             <input type="email" required id="email" placeholder="E-mail">
-            <input type="number" required id="telefone" placeholder="Telefone">
-            <input type="number" required id="cpf" placeholder="Cpf">
+            <input type="tel" required id="telefone" placeholder="Telefone">
+            <input type="text" required id="cpf" placeholder="Cpf">
             <input type="text" required id="endereco" placeholder="Endereço">
-            <input type="number" required id="cep" placeholder="CEP">
+            <input type="text" required id="cep" placeholder="CEP">
             <button type="submit">Cadastrar</button>
         </form>
     </div>
@@ -23,6 +23,8 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script>
         $('#telefone').mask('(00) 00000-0000');
+        $('#cpf').mask('000.000.000-00');
+        $('#cep').mask('00000-000');
     </script>
 </body>
 </html>
