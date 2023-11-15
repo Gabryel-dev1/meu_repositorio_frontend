@@ -10,14 +10,19 @@
     <div class="container">
         <form>
             <h1>Formulario de cadastro</h1>
-            <input type="text" required placeholder="Nome completo">
-            <input type="email" required placeholder="E-mail">
-            <input type="number" required placeholder="Telefone">
-            <input type="number" required placeholder="Cpf">
-            <input type="text" required placeholder="Endereço">
-            <input type="number" required placeholder="CEP">
+            <input type="text" required id="Nome" placeholder="Nome completo">
+            <input type="email" required id="email" placeholder="E-mail">
+            <input type="number" required id="telefone" placeholder="Telefone">
+            <input type="number" required id="cpf" placeholder="Cpf">
+            <input type="text" required id="endereco" placeholder="Endereço">
+            <input type="number" required id="cep" placeholder="CEP">
             <button type="submit">Cadastrar</button>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script>
+        $('#telefone').mask('(00) 00000-0000');
+    </script>
 </body>
 </html>
