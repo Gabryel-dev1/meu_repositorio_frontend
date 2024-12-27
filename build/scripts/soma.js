@@ -1,0 +1,1 @@
+let somar=(o,s)=>o+s;console.log("A soma é: "+somar(5,3));
