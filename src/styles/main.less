@@ -1,3 +1,8 @@
+@import "variaveis.less";
+@import "maps.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)"; 
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: @cordeFundo;
 }
 
 li {
@@ -20,7 +25,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: @cordeFundoHeader;
     position: sticky;
     top: 0;
     left: 0;
@@ -43,7 +48,7 @@ header .container {
 }
 
 .menu li a {
-    color: #fff;
+    color: @cordetexto;
     text-decoration: none;
 }
 
@@ -67,8 +72,8 @@ section {
 
 .product-button {
     display: block;
-    background-color: #44bd32;
-    color: #fff;
+    background-color: @coresBotao[corDeFundo];
+    color: @coresBotao[corTexto];
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
@@ -77,10 +82,10 @@ section {
 }
 
 .product-button:hover {
-    background-color: #4cd137;
+    background-color: darken(@coresBotao[corDeFundo], 5%);
 }
 
-@media screen and (max-width: 1023px) {
+@media @breakpointTablet {
     .container {
         max-width: 80%;
     }
@@ -91,12 +96,12 @@ section {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media @breakpointMobile {
     .products {
         display: block;
     }
 
-    .product-item  {
+    .product-item {
         margin-bottom: 32px;
     }
 }
